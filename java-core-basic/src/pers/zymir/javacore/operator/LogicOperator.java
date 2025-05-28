@@ -9,6 +9,9 @@ public class LogicOperator {
 
     // returnTrue()被短路
     boolean result02 = returnFalse() && returnTrue();
+
+    // 最后一个returnFalse()被短路
+    boolean result03 = returnFalse() || returnTrue() || returnFalse();
   }
 
   private static boolean returnFalse() {
